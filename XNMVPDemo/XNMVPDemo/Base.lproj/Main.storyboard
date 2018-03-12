@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25q-gD-5RZ">
-                                <rect key="frame" x="26" y="120" width="46" height="30"/>
+                                <rect key="frame" x="26" y="120" width="117" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="MVPDemo"/>
                                 <connections>
                                     <segue destination="jng-Nj-JDc" kind="push" id="iTI-8h-SCN"/>
                                 </connections>
@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-337" y="190"/>
+            <point key="canvasLocation" x="-338.39999999999998" y="189.3553223388306"/>
         </scene>
         <!--Controller-->
         <scene sceneID="XTZ-vr-6xE">
@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lvm-14-xA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="426" y="189"/>
+            <point key="canvasLocation" x="438" y="45"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wYf-ap-VaU">

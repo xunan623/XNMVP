@@ -16,7 +16,9 @@
 		AF5856A72056286200AEA452 /* XNMVPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5856A62056286200AEA452 /* XNMVPDemoTests.m */; };
 		AF5856B22056286200AEA452 /* XNMVPDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5856B12056286200AEA452 /* XNMVPDemoUITests.m */; };
 		AF5856C7205629CC00AEA452 /* XNMVPController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5856C6205629CC00AEA452 /* XNMVPController.m */; };
-		AF5856CA20562A1900AEA452 /* XNMVPPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5856C920562A1900AEA452 /* XNMVPPresenter.m */; };
+		AF5856CD20562FF400AEA452 /* XNLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5856CC20562FF400AEA452 /* XNLoginModel.m */; };
+		AF5856D12056301100AEA452 /* XNLoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5856D02056301100AEA452 /* XNLoginPresenter.m */; };
+		AF5856D420564F8E00AEA452 /* XNLoginServices.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5856D320564F8E00AEA452 /* XNLoginServices.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +57,13 @@
 		AF5856B32056286200AEA452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF5856C5205629CC00AEA452 /* XNMVPController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNMVPController.h; sourceTree = "<group>"; };
 		AF5856C6205629CC00AEA452 /* XNMVPController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNMVPController.m; sourceTree = "<group>"; };
-		AF5856C820562A1900AEA452 /* XNMVPPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNMVPPresenter.h; sourceTree = "<group>"; };
-		AF5856C920562A1900AEA452 /* XNMVPPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNMVPPresenter.m; sourceTree = "<group>"; };
+		AF5856CB20562FF400AEA452 /* XNLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNLoginModel.h; sourceTree = "<group>"; };
+		AF5856CC20562FF400AEA452 /* XNLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNLoginModel.m; sourceTree = "<group>"; };
+		AF5856CE20562FFF00AEA452 /* XNLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNLoginView.h; sourceTree = "<group>"; };
+		AF5856CF2056301100AEA452 /* XNLoginPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNLoginPresenter.h; sourceTree = "<group>"; };
+		AF5856D02056301100AEA452 /* XNLoginPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNLoginPresenter.m; sourceTree = "<group>"; };
+		AF5856D220564F8E00AEA452 /* XNLoginServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNLoginServices.h; sourceTree = "<group>"; };
+		AF5856D320564F8E00AEA452 /* XNLoginServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNLoginServices.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +150,8 @@
 		AF5856BF2056296400AEA452 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AF5856D220564F8E00AEA452 /* XNLoginServices.h */,
+				AF5856D320564F8E00AEA452 /* XNLoginServices.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -161,8 +170,8 @@
 		AF5856C12056296400AEA452 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				AF5856C820562A1900AEA452 /* XNMVPPresenter.h */,
-				AF5856C920562A1900AEA452 /* XNMVPPresenter.m */,
+				AF5856CF2056301100AEA452 /* XNLoginPresenter.h */,
+				AF5856D02056301100AEA452 /* XNLoginPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -170,6 +179,8 @@
 		AF5856C22056296400AEA452 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF5856CB20562FF400AEA452 /* XNLoginModel.h */,
+				AF5856CC20562FF400AEA452 /* XNLoginModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +188,7 @@
 		AF5856C32056296400AEA452 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AF5856CE20562FFF00AEA452 /* XNLoginView.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,11 +335,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5856D12056301100AEA452 /* XNLoginPresenter.m in Sources */,
 				AF5856922056286200AEA452 /* ViewController.m in Sources */,
 				AF5856C7205629CC00AEA452 /* XNMVPController.m in Sources */,
-				AF5856CA20562A1900AEA452 /* XNMVPPresenter.m in Sources */,
 				AF58569D2056286200AEA452 /* main.m in Sources */,
+				AF5856D420564F8E00AEA452 /* XNLoginServices.m in Sources */,
 				AF58568F2056286200AEA452 /* AppDelegate.m in Sources */,
+				AF5856CD20562FF400AEA452 /* XNLoginModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

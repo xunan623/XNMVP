@@ -1,5 +1,5 @@
 //
-//  XNMVPPresenter.h
+//  XNLoginView.h
 //  XNMVPDemo
 //
 //  Created by Dandre on 2018/3/12.
@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XNMVPPresenter : NSObject
+@protocol XNLoginView <NSObject>
+
+- (void)onLoginResult:(NSString *)result;
 
 @end
